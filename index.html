@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/styles.css" type="text/css">
 
     <title>Blog site</title>
@@ -43,20 +44,66 @@
     </div>
 
     <div id="main"></div> -->
-
-    <nav class="nav-bar">
-        <div class="menu-btn">
-            <div class="menu-btn__burger"></div>
-        </div>
-
+    <!-- <div class="nav-container">
         <div class="brand-icon">
             <img src="/icons/main-icon-Vector.png" alt="" class="icon1">
             <img src="/icons/main-icon-Vector-1.png" alt="" class="icon2">
         </div>
+        
+        <input id="nav-toggle" type="checkbox" class="nav-toggle">
+
+        <nav class="nav-bar">
+            
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+        </label>
+
+    </div> -->
+
+    <!-- <div class="nav-container">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </div> -->
+
+    <nav class="nav">
+        <input type="checkbox" id="check">
+        <label for="check" class="">
+            <i class="fas fa-bars"></i>
+        </label>
+            
+        <label class="logo">
+            <img src="/icons/main-icon-Vector.png" alt="" class="logo-img">
+            <img src="/icons/main-icon-Vector-1.png" alt="" class="logo-img">
+        </label>
+
+        <ul class="nav-ul">
+            <li class="nav-li"><a class="nav-a active" href="#">home</></li>
+            <li class="nav-li"><a class="nav-a" href="#">about</a></li>
+            <li class="nav-li"><a class="nav-a" href="#">service</a></li>
+            <li class="nav-li"><a class="nav-a" href="#">conatact</a></li>
+            <li class="nav-li"><a class="nav-a" href="#">other</a></li>
+        </ul>
     </nav>
-
-
-
 
     <!-- end mobile mavigation button -->
     <!-- first heading -->

@@ -259,10 +259,63 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s ease;
 } */
 
+
+/* .nav-container {
+    background-color: #faf7f3;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
 .nav-bar {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background-color: green;
+    width: 100%;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    border: solid 1px red;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
-    background-color: #fff;
+    align-items: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.nav-toggle:checked ~ .nav-bar {
+    display: block;
 }
 
 .brand-icon {
@@ -280,9 +333,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 3rem;
     cursor: pointer;
     transition: all .5s ease-in-out;
-    border: solid 2px #000;
-    background-color: #faf7f3;
-    
 }
 
 .menu-btn__burger {
@@ -310,9 +360,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu-btn__burger::after {
     transform: translateY(1rem);
-}
+} */
 /* animation part */
-.menu-btn.open .menu-btn__burger {
+/* .menu-btn.open .menu-btn__burger {
     transform: translateX(-3rem);
     background-color: transparent;
 }
@@ -323,11 +373,144 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu-btn.open .menu-btn__burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
-}
+} */
 
 /* end animation */
 
+/* .nav-container {
+    background-color: blue;
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 5em;
+}
 
+.nav-toggle {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.nav-toggle:focus ~ .nav-toggle-label {
+    outline: 3px solid rgba(red, .75);
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label::before,
+.nav-toggle-label::after {
+    display: block;
+    background-color: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    top: 10px;
+}
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background-color: grey;
+    width: 100%;
+    transform: scale(1, 0);
+    transition: trasnform 400ms ease-in-out;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.nav-toggle:checked ~ nav {
+    transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+} */
+
+.nav {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+    height: 4em;
+    background-color: lightblue;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+}
+
+nav ul {
+    float: right;
+    margin-right: 2em;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 2em;
+    margin: 0 auto;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    padding: .6em 1em;
+    border-radius: 5px;
+}
+
+a.active, a:hover {
+    background-color: blue;
+    transition: .5s;
+}
 
 /* end bav-bar */
 /* header */
@@ -527,15 +710,75 @@ h1, h2, h3, h4, h5, h6 {
     }
     /* end presentation section */
     /* footer */
-   .footer-img {
-       width: 15em;
-   }
+    .footer-img {
+    width: 15em;
+    }
     /* end footer */
 }
 
 @media only screen and (min-width: 800px) {
     /* nav-bar */
+    /* .nav-toggle-label {
+        display: none;
+    }
+    
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    }
 
+    .logo {
+        grid-column: 2 / 3;
+    }
+
+    nav { */
+        /* // all: unset; this causes issues with Edge, since it's unsupported */
+        
+        /* the following lines are not from my video, but add Edge support */
+        /* position: relative;
+        text-align: left;
+        transition: none;
+        transform: scale(1,1);
+        background: none;
+        top: initial;
+        left: initial; */
+        /* end Edge support stuff */
+/*         
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+    }
+    
+    nav li {
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
+    
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
+    
+    nav a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        background: black;
+        position: absolute;
+        top: -.75em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transition: transform ease-in-out 250ms;
+    }      
+    nav a:hover::before {
+    transform: scale(1,1);
+    } */
     /* end nav-bar */
     /* header */
     .first-header-title {
@@ -563,47 +806,47 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .card {
-        width: 30%;
-        margin:0 auto;
-   }
+    width: 30%;
+    margin:0 auto;
+}
 
-   .card-title {
-       text-align: left;
-       font-size: 2em;
-       padding: 0.5em 0;
-   }
+.card-title {
+    text-align: left;
+    font-size: 2em;
+    padding: 0.5em 0;
+}
 
-   .card-text {
-       width: 70%;
-       text-align: left;
-       
-   }
+.card-text {
+    width: 70%;
+    text-align: left;
+
+}
    /* end additional info section */
    /* service info */
-   .service-intro {
-       padding: 4em 0;
-       width: 70%;
-       margin: 0;
-       text-align: left;
-   }
+.service-intro {
+    padding: 4em 0;
+    width: 70%;
+    margin: 0;
+    text-align: left;
+}
 
-   .service-text {
-       width: 60%;
-       text-align: left;
-   }
+.service-text {
+    width: 60%;
+    text-align: left;
+}
 
-   .service-description {
-       display: flex;
-       justify-content: space-between;
-       padding-bottom: 3em;
-   }
+.service-description {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3em;
+}
 
-   .service-details {
-       width: 30%;
-   }
+.service-details {
+    width: 30%;
+}
 
-   .service-img {
-       padding-bottom: 2em;
-   }
+.service-img {
+    padding-bottom: 2em;
+}
    /* end service info */
 }
